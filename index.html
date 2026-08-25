@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>巡り通帳 — サポート</title>
+<meta name="description" content="iOSアプリ「巡り通帳」のサポートページ。使い方とよくある質問。">
+<style>
+:root{--paper:#EDF2EE;--card:#FBFCFB;--ink:#18211C;--ink2:#4A5A50;--ink3:#8E9E94;--rule:#D3DDD6;--seal:#B22D25;--matcha:#4F7360;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);line-height:1.9;
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",-apple-system,sans-serif;
+  padding:0 20px 80px;-webkit-text-size-adjust:100%}
+.wrap{max-width:680px;margin:0 auto}
+header{padding:48px 0 30px;border-bottom:1.5px solid var(--ink);margin-bottom:32px;text-align:center}
+.seal{display:inline-grid;place-items:center;width:56px;height:56px;border:2.5px solid var(--seal);
+  border-radius:6px;color:var(--seal);font-size:28px;font-weight:600;
+  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;margin-bottom:16px}
+header h1{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:30px;
+  letter-spacing:.14em;font-weight:600}
+header p{font-size:13.5px;color:var(--ink2);margin-top:8px;letter-spacing:.04em}
+section{margin-bottom:36px}
+h2{font-size:16px;font-weight:600;letter-spacing:.04em;padding-bottom:8px;
+  border-bottom:1px solid var(--rule);margin-bottom:16px}
+p{font-size:14.5px;margin-bottom:12px}
+.steps{list-style:none;padding:0}
+.steps li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.steps li:last-child{border-bottom:0}
+.steps .n{flex:0 0 26px;font-size:17px;color:var(--matcha);font-weight:600;
+  font-variant-numeric:tabular-nums;line-height:1.5}
+.steps b{display:block;font-size:14.5px;font-weight:600;margin-bottom:2px}
+.steps span{font-size:13px;color:var(--ink3);line-height:1.75}
+.faq{background:var(--card);border:1px solid var(--rule);border-radius:3px;
+  padding:16px 18px;margin-bottom:10px}
+.faq b{display:block;font-size:14px;margin-bottom:7px}
+.faq b::before{content:"Q. ";color:var(--seal);font-weight:700}
+.faq p{font-size:13.5px;color:var(--ink2);margin:0}
+.contact{background:var(--card);border:1px solid var(--rule);
+  border-left:3px solid var(--seal);border-radius:3px;padding:20px}
+.contact p{margin-bottom:8px}
+a{color:var(--seal);text-decoration:underline;text-underline-offset:2px}
+footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--rule);
+  font-size:12.5px;color:var(--ink3);text-align:center}
+footer a{color:var(--matcha)}
+@media(max-width:520px){header h1{font-size:25px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="seal">巡</span>
+  <h1>巡 り 通 帳</h1>
+  <p>行った場所を、一行ずつ。</p>
+</header>
+
+<section>
+  <h2>このアプリについて</h2>
+  <p>
+    ラーメン・カフェ・サウナ・道の駅など、選んだジャンルごとに
+    「行った場所」を記帳していくアプリです。
+    お店に着いたらボタンをひとつ押すだけで、通帳に一行ずつ記録が増えていきます。
+  </p>
+  <p>
+    記録はすべて端末内に保存されます。アカウント登録もログインも必要ありません。
+  </p>
+</section>
+
+<section>
+  <h2>使いかた</h2>
+  <ol class="steps">
+    <li>
+      <span class="n">1</span>
+      <div><b>ジャンルを選ぶ</b>
+      <span>初回起動時に、巡りたいジャンルを選びます。設定からいつでも追加・変更できます。</span></div>
+    </li>
+    <li>
+      <span class="n">2</span>
+      <div><b>さがす</b>
+      <span>「さがす」タブで、近くのお店や施設を地図とリストから探します。</span></div>
+    </li>
+    <li>
+      <span class="n">3</span>
+      <div><b>記帳する</b>
+      <span>お店を選んで「記帳する」を押すだけ。写真・評価・メモは後から任意で追加できます。</span></div>
+    </li>
+    <li>
+      <span class="n">4</span>
+      <div><b>通帳がたまる</b>
+      <span>「通帳」タブに記録が一行ずつ増えます。「実績」タブでは都道府県の制覇状況を確認できます。</span></div>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>よくある質問</h2>
+
+  <div class="faq">
+    <b>お店が検索結果に出てきません</b>
+    <p>地図を動かして「このエリアで再検索」を押すと、その範囲を検索し直します。
+       それでも見つからない場合、その施設がAppleマップに登録されていない可能性があります。</p>
+  </div>
+
+  <div class="faq">
+    <b>お店の情報が間違っています</b>
+    <p>店舗の名称や場所の情報はAppleマップのデータを利用しています。
+       情報の修正はAppleマップアプリからご報告ください。</p>
+  </div>
+
+  <div class="faq">
+    <b>お店から離れていると表示され、記帳できません</b>
+    <p>離れている場合も記帳はできます。GPSは屋内やビルの多い場所でずれることがあるため、
+       注意表示が出るだけで、記帳そのものは制限していません。</p>
+  </div>
+
+  <div class="faq">
+    <b>ジャンルを追加したい</b>
+    <p>「通帳」タブ右上の歯車から設定を開き、ジャンルのスイッチをオンにしてください。</p>
+  </div>
+
+  <div class="faq">
+    <b>ジャンルをオフにすると記録は消えますか</b>
+    <p>消えません。通帳と検索の一覧に表示されなくなるだけで、記帳データはそのまま保持されます。
+       再びオンにすれば元通り表示されます。</p>
+  </div>
+
+  <div class="faq">
+    <b>機種変更したらデータは引き継がれますか</b>
+    <p>現在のバージョンでは、データは端末内にのみ保存されるため引き継がれません。
+       今後のアップデートで対応を検討しています。</p>
+  </div>
+
+  <div class="faq">
+    <b>記帳を削除したい</b>
+    <p>通帳の該当する行を左にスワイプすると削除できます。
+       すべて削除する場合は、設定の「すべてのデータを削除」をご利用ください。</p>
+  </div>
+
+  <div class="faq">
+    <b>位置情報を許可しないと使えませんか</b>
+    <p>使えます。ただし現在地からの距離が表示されず、近い順に並び替えることができません。</p>
+  </div>
+</section>
+
+<section>
+  <h2>お問い合わせ</h2>
+  <div class="contact">
+    <p>ご不明な点、不具合のご報告、ご要望はこちらまでお願いします。</p>
+    <p><a href="mailto:steplife.contact@gmail.com">steplife.contact@gmail.com</a></p>
+    <p style="font-size:12.5px;color:var(--ink3);margin:0">
+      不具合のご報告の際は、iOSのバージョンと端末の機種をあわせてお知らせいただけると助かります。
+    </p>
+  </div>
+</section>
+
+<footer>
+  <a href="./privacy.html">プライバシーポリシー</a>　·　巡り通帳
+</footer>
+
+</div>
+</body>
+</html>
