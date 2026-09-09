@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>巡り通帳のおすすめ</title>
-<meta name="description" content="巡り通帳から届いた、おすすめのお店。">
+<title>MeguLogのおすすめ</title>
+<meta name="description" content="MeguLogから届いた、おすすめのお店。">
 
 <!--
   OGP は固定の内容にしている。このページは静的HTMLで、店の情報は
@@ -13,7 +13,7 @@
   店ごとに違うタイトル・説明文を出したい場合は、サーバー側でのレンダリングが
   別途必要になる（このWaveではやらない）。
 -->
-<meta property="og:title" content="巡り通帳のおすすめ">
+<meta property="og:title" content="MeguLogのおすすめ">
 <meta property="og:description" content="友人・知人から、行ってよかったお店のおすすめが届きました。">
 <meta property="og:type" content="website">
 
@@ -87,7 +87,7 @@ body.is-error .error{display:block}
 
   <div class="brand">
     <span class="mark">巡</span>
-    <span>巡り通帳</span>
+    <span>MeguLog</span>
   </div>
 
   <div class="error">
@@ -121,13 +121,13 @@ body.is-error .error{display:block}
       「アプリがインストール済みならアプリで開く／なければApp Store」に
       切り替える予定。それまでは常に App Store のプロダクトページを開く。
     -->
-    <a class="btn primary" id="openAppButton" href="https://apps.apple.com/app/id6805061342">巡り通帳を入手して開く</a>
+    <a class="btn primary" id="openAppButton" href="https://apps.apple.com/app/id6805061342">MeguLogを入手して開く</a>
     <a class="btn secondary" id="openMapsButton" href="#" target="_blank" rel="noopener">地図アプリで開く</a>
   </div>
 
   <footer>
     <span class="app-seal">巡</span>
-    <h2>巡 り 通 帳</h2>
+    <h2>MeguLog</h2>
     <p>訪れた場所を、通帳のように<br>記帳するアプリ。<br>登録不要・記録は端末の中だけ。</p>
     <div class="genre-strip">
       <span>麺</span><span>珈</span><span>駅</span><span>湯</span><span>社</span>
@@ -176,7 +176,7 @@ function base64UrlDecode(str) {
 
 function showError() {
   document.body.classList.add("is-error");
-  document.title = "リンクが正しくありません｜巡り通帳";
+  document.title = "リンクが正しくありません｜MeguLog";
 }
 
 function render(data) {
@@ -192,7 +192,7 @@ function render(data) {
   document.getElementById("mapPin").textContent = genreInfo.seal;
   document.getElementById("placeName").textContent = data.n;
   document.getElementById("placeGenre").textContent = genreInfo.name;
-  document.title = data.n + "｜巡り通帳";
+  document.title = data.n + "｜MeguLog";
 
   if (data.a) {
     const addressEl = document.getElementById("placeAddress");
