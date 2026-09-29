@@ -10,7 +10,7 @@ App Store Connect の「App のプライバシー」で、5.0.0（巡り便の�
 | Apple の分類 | 該当するデータ | 目的 | ユーザーに紐づくか | トラッキング |
 |---|---|---|---|---|
 | User Content → Photos or Videos | 巡り便に付けた写真（記帳に追加した写真から、お店ごとに任意で1枚まで。撮影場所などの情報は削除済み） | App Functionality | はい（下記の注1） | いいえ |
-| User Content → Other User Content | 題、店名・ジャンル・所在地、推し度、予算感、ひとこと、差出人の表示（「愛知のだれか」など）、返事スタンプ、通報の理由 | App Functionality | はい（注1） | いいえ |
+| User Content → Other User Content | 題、店名・ジャンル・所在地、推し度、予算感、ひとこと、差出人の地域（都道府県か地方の名前。「愛知県のだれか」などと表示）、返事スタンプ、通報の理由 | App Functionality | はい（注1） | いいえ |
 | Identifiers → User ID | 巡り便を初めて使うときに作られるランダムな識別番号（Supabase の匿名サインイン、注2） | App Functionality | はい（注1） | いいえ |
 
 - どの項目も、広告・分析・トラッキングには使わない。
